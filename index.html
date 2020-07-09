@@ -8,14 +8,12 @@
 
   </head>
   <body>
-    <p></p>
 
   <script type="text/javascript">
-    $.ajax("info.txt").done(function(data){
-      $("p").html(data);
-    }).fail(function(){
-      alert("Could not get data!");
-    });
+    var regex = /is/;
+    var string = "Regex is great!";
+    var result = string.match(regex);
+    alert(result);
   </script>
   </body>
 </html>
